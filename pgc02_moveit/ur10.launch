@@ -7,7 +7,7 @@
   <arg name="limited" default="false"/>
   <arg name="min_payload"  default="0.0"/>
   <arg name="max_payload"  default="5.0"/>
-  <arg name="prefix" default="ur5_arm_" />
+  <arg name="prefix" default="ur10_arm_" />
   <arg name="servoj_time" default="0.008" />
   <arg name="base_frame" default="$(arg prefix)base_link" />
   <arg name="tool_frame" default="$(arg prefix)tool0_controller" />
