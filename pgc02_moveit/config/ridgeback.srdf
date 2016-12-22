@@ -63,7 +63,6 @@
     <disable_collisions link1="pgc02_link" link2="rear_right_wheel_link" reason="Never" />
     <disable_collisions link1="pgc02_link" link2="ur10_arm_base_link" reason="Never" />
     <disable_collisions link1="pgc02_link" link2="ur10_arm_shoulder_link" reason="Never" />
-    <disable_collisions link1="pgc02_link" link2="ur10_arm_upper_arm_link" reason="Never" />
     <disable_collisions link1="rear_laser" link2="rear_left_wheel_link" reason="Never" />
     <disable_collisions link1="rear_laser" link2="rear_right_wheel_link" reason="Never" />
     <disable_collisions link1="rear_laser" link2="ur10_arm_base_link" reason="Never" />
