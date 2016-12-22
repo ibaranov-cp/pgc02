@@ -16,14 +16,14 @@
 
 
   <!-- If enabled, generate the front HOKUYO UST-10LX LASER payload. -->
-  <xacro:if value="$(optenv RIDGEBACK_FRONT_HOKUYO_LASER 0)">
+  <xacro:if value="$(optenv RIDGEBACK_FRONT_HOKUYO_LASER 1)">
     <xacro:hokuyo_ust-10lx_mount prefix="front"
                             topic="front/scan"
                             location="1" />
   </xacro:if>
 
   <!-- If enabled, generate the rear HOKUYO UST-10LX LASER payload. -->
-  <xacro:if value="$(optenv RIDGEBACK_REAR_HOKUYO_LASER 0)">
+  <xacro:if value="$(optenv RIDGEBACK_REAR_HOKUYO_LASER 1)">
     <xacro:hokuyo_ust-10lx_mount prefix="rear"
                             topic="rear/scan"
                             location="-1" />
@@ -43,24 +43,24 @@
                             location="-1" />
   </xacro:if>
 
-  <link name="arch_link">
+  <link name="pgc02_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://ridgeback_description/meshes/epfl_arch.dae" />
+				<mesh filename="package://ridgeback_description/meshes/pgc02_top.dae" />
 			</geometry>
 		</visual>
 
 		<collision>
 			<geometry>
-				<mesh filename="package://ridgeback_description/meshes/epfl_arch.dae" />
+				<mesh filename="package://ridgeback_description/meshes/pgc02_top.dae" />
 			</geometry>
 		</collision>
    </link>
 
-  <joint name="arch_joint" type="fixed">
+  <joint name="pgc02_joint" type="fixed">
 	  <origin xyz="-0.38 0 0.278" rpy="0 0 1.5" />
 	  <parent link="top_link" />
-	  <child link="arch_link" />
+	  <child link="pgc02_link" />
   </joint>
 
 <!-- Spawn arm -->
