@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<node name="robotiq_gripper" pkg="robotiq_s_model_control" type="SModelTcpNode.py" respawn="true" args="192.168.131.19" output="screen">
+</node>
+
+
+<node name="ft_sensor" pkg="robotiq_force_torque_sensor" type="rq_sensor" respawn="true" output="screen">
+</node>
+
+</launch>
