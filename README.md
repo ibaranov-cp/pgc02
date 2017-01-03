@@ -29,7 +29,7 @@ export ROS_MASTER_URI=http://cpr-pgc02:11311
 
 On the robot, the UR10 driver should be brought up manually, as the UR10 arm can be powered on and off separately from the rest of the robot:
 ```
-roslaunch roslaunch pgc02_moveit ur10.launch
+roslaunch pgc02_moveit ur10.launch
 ```
 Once the driver is up, the planner can be started on the robot, or on the laptop (as long as exported properly, etc) with:
 ```
