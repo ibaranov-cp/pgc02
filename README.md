@@ -43,4 +43,4 @@ roslaunch pgc02_moveit moveit_rviz.launch config:=true
 
 Be sure to try out different planners, as some are significantly faster and more efficient than others.
 
-![](http://i.imgur.com/O4iyg4l.png)
+![](http://i.imgur.com/na88L0g.png)
